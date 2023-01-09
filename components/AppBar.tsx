@@ -7,7 +7,7 @@ export default function AppBar() {
           <img src='/logo.svg' alt='' />
 
           <label className='switch'>
-            <input type='checkbox' className='checkbox' />
+            <input type='checkbox' className='checkbox' checked />
             <span className='toggle-thumb'>
               <span className='text-[7px]'>light</span>
               <span></span>
@@ -18,6 +18,7 @@ export default function AppBar() {
 
       <div className='basis-1/2'>
         <div className='flex  justify-between items-center'>
+          <span className='h-[50px]  border-l-2 border-[#EDEDED]'></span>
           <div className='basis-3/4 flex justify-around px-[18px]'>
             <img src='/chevron-right.svg' alt='' />
             <div>
@@ -30,7 +31,7 @@ export default function AppBar() {
               <p className='text-[10px]'>LOAN BALANCE</p>
             </div>
           </div>
-
+          <span className='h-[52px]  border-l-2 border-[#EDEDED]'></span>
           <div className='basis-1/4'>
             <div className='flex gap-[8px] justify-end'>
               <p className='text-[10px] text-white p-1 font-bold bg-[#1E1E1E]'>DEMO</p>
