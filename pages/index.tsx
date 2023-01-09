@@ -16,11 +16,9 @@ export default function Dashbord() {
 
       <main>
         <DashboardLayout>
-          <section className='flex gap-2'>
-            <OrderLayout>
-              <OrderBook />
-            </OrderLayout>
-          </section>
+          <OrderLayout>
+            <OrderBook />
+          </OrderLayout>
         </DashboardLayout>
       </main>
     </>

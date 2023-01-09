@@ -41,7 +41,7 @@ export default function OrderNav({ setActiveTab, activeTab }) {
         <div
           key={idx}
           onClick={() => setActiveTab(tab.id)}
-          className={`cursor-pointer flex items-center gap-[15px] px-[30px] py-4 ${
+          className={`cursor-pointer flex items-center px-2 gap-[15px] py-4 ${
             tab.id == activeTab ? "bg-[#F8FAFB]  " : ""
           }`}
         >

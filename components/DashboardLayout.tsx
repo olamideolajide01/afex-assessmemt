@@ -18,11 +18,11 @@ function DashboardLayout(props) {
             <AppBar />
           </div>
 
-          <div className={`flex gap-2 max-h-full `}>
+          <div className={`flex flex-row gap-2 max-h-full w-full`}>
             <aside className=' h-screen  bg-white'>
               <SideNav />
             </aside>
-            <div>{props.children}</div>
+            <div className=' h-screen w-full'>{props.children}</div>
           </div>
           <div className='bottom-0 bg-white fixed w-full  z-50'>
             <FooterSection />
