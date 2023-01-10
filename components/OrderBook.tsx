@@ -4,6 +4,7 @@ import { data } from "../data";
 
 export default function OrderBook() {
   const [activeBoard, setActiveBoard] = useState(1);
+  const [activeProduct, setActiveProduct] = useState(1);
   const [newData, setNewData] = useState(data);
 
   const boards = [
@@ -81,10 +82,10 @@ export default function OrderBook() {
         <div className='flex  gap-4 bg-white pl-4 pb-4'>
           <p className='self-center'>Products</p>
           {products.map((tab) => (
-            <div key={tab.id} onClick={() => setActiveBoard(tab.id)}>
+            <div key={tab.id} onClick={() => setActiveProduct(tab.id)}>
               <p
                 className={`text-sm ${
-                  tab.id == activeBoard
+                  tab.id == activeProduct
                     ? "text-white bg-[#D71E0E] py-[9px] px-[14px] rounded-[18px] font-medium "
                     : "text-text p-[9px] bg-[#F8FAFB] rounded-[18px] py-[9px] px-[10px]"
                 }`}
