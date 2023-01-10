@@ -7,7 +7,7 @@ export default function AppBar() {
           <img src='/logo.svg' alt='' />
 
           <label className='switch'>
-            <input type='checkbox' className='checkbox' checked />
+            <input type='checkbox' className='checkbox' />
             <span className='toggle-thumb'>
               <span className='text-[7px]'>light</span>
               <span></span>

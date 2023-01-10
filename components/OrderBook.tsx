@@ -1,6 +1,7 @@
 // import Manager from "../lib/encryption";
 import React, { useEffect, useState } from "react";
 import { data } from "../data";
+import WebSocketDemo from "./Websocket";
 
 export default function OrderBook() {
   const [activeBoard, setActiveBoard] = useState(1);
@@ -95,6 +96,8 @@ export default function OrderBook() {
             </div>
           ))}
         </div>
+
+        <WebSocketDemo />
       </div>
     </section>
   );
